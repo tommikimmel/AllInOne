@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    background-color: #292929;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+.cont-nav{
+    height: 42px;
+    width: 200px;
+    background-color: white;
+    border-radius: 10ex;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,.15);
+}
+
+.botones-nav{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.botones-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(1px);
+}
+
+.navLogo{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: black;
+    transition: all 0.2s linear;
+}
+
+.botones-nav ul li a{
+    text-decoration: none;
+}
+
+.active{
+    background-color: #fff;
+    border: none;
+    color: #f00;
+    transition: 0.2s linear;
+    transform: translateY(-15px);
+    outline: 3px solid #292929;
+}
+
+#appBg{
+    height: 400px;
+    width: 295px;
+    border:  1px solid black;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#appBg form{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0,0,0);
+}
+
+#appBg input[type=textfield]{
+        width: 100%;
+        height: 25%;
+        cursor: default;
+        font-family: 'Roboto', sans-serif;
+        background-color: rgb(0,0,0);
+        color: white;
+        padding: 15px;
+        text-align: right;
+        font-size: 50px;
+        border: none;
+        outline: none;
+}
+
+#appBg input[type=button], input[type=reset]{
+    width: 22%;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    padding: 18px;
+    margin: 2px;
+    border: 0;
+    border-radius: 50%;
+}
+
+#appBg .red{
+    background-color: #f00 !important;
+    color: white !important;
+}
+
+#appBg .gray{
+    background-color: rgb(51,51,51) !important;
+    color: white !important;
+}
+
+.promedioNotas{
+    height: 400px;
+    width: 295px;
+    background: #000;
+    border-radius: 10px;
+    color: red;
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.promedioNotas h2{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.promedioNotas	input[type=number]{
+    width: 75%;
+    height: 30px;
+    margin: 5px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    border-radius: 10ex;
+}
+
+#calcular{
+    width: 90%;
+    height: 35px;
+    margin-top: 15px;
+    border-radius: 10ex;
+    background-color: red;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+#promedio{
+    margin-top: 30px;
+    font-size: 30px;
+}
